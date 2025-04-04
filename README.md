@@ -141,3 +141,10 @@ https://docs.openwdl.org/getting-started/quickstart.html
 - Gather into single results
 - Optimise speed
 - https://docs.openwdl.org/design-patterns/scatter-gather/index.html
+
+---
+
+### Runtime attributes
+
+- e.g. Docker, cpu, memory
+- https://cromwell.readthedocs.io/en/stable/RuntimeAttributes/
