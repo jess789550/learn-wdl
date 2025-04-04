@@ -45,11 +45,28 @@ https://www.youtube.com/playlist?list=PL4Q4HssKcxYv5syJKUKRrD8Fbd-_CnxTM
 
 ---
 
-### To run WDL you need to install Cromwell/MiniWDL
+### To run WDL you need to install Cromwell/MiniWDL/womtool
 git clone the latest release from https://github.com/broadinstitute/cromwell
+
 ```
+# Run the workflow and print out the outputs in a JSON format
 java -jar <cromwell.jar> run <file.wdl>
 java -jar <cromwell.jar> run <file.wdl> -i <input.json>
+
+# Submit the workflow to a Cromwell server
+java -jar <cromwell.jar> submit <file.wdl>
+
+# Validate a workflow source file. If inputs are provided then 'validate' also checks that the inputs file is a valid set of inputs for the workflow.
+java -jar <womtool.jar> validate <file.wdl>
+
+# Generate and output a new inputs JSON for this workflow.
+java -jar <womtool.jar> inputs <file.wdl>
+
+# Generate and output a list of output types in JSON for this workflow.
+java -jar <womtool.jar> outputs <file.wdl>
+
+# Generate and output a graph visualization of the workflow in .dot format
+java -jar <womtool.jar> graph <file.wdl>
 ```
 
 ---
