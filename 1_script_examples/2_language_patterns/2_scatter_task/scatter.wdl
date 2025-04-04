@@ -2,14 +2,15 @@ version 1.0
 
 workflow TimingWorkflow {
 	input {
-		Int in_sleep_time
+		Int sleep_time
 	}
 	# scatter keyword parallelizes this Sleep task execution
-	scatter(i in range(in_sleep_time)) {
+	scatter(i in range(sleep_time)) {
 		call Sleep { input: sleep_time = i }
 	}
 	output {
 		Array[String] outputs = Sleep.out
+    }
 }
 
 task Sleep {
