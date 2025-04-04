@@ -49,4 +49,13 @@ https://www.youtube.com/playlist?list=PL4Q4HssKcxYv5syJKUKRrD8Fbd-_CnxTM
 git clone the latest release from https://github.com/broadinstitute/cromwell
 ```
 java -jar <cromwell.jar> run <file.wdl>
+java -jar <cromwell.jar> run <file.wdl> -i <input.json>
 ```
+
+---
+
+### Execution environments
+- Google Cloud
+- Terra Bio
+- Cromwell
+- MiniWDL
