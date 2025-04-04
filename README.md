@@ -69,8 +69,19 @@ java -jar <womtool.jar> outputs <file.wdl>
 # Generate and output a graph visualization of the workflow in .dot format
 java -jar <womtool.jar> graph <file.wdl>
 
+################################################
+
 # MiniWDL: https://miniwdl.readthedocs.io/en/latest/runner_cli.html
 miniwdl run -i <input.json>
+
+# To aid the workflow development cycle, miniwdl includes a code quality checker which statically analyzes WDL source code to generate warnings and suggestions.
+miniwdl check <file.wdl>
+
+# miniwdl input_template generates a JSON skeleton for the inputs required to run a given WDL.
+miniwdl input_template <file.wdl> > <file.json>
+
+# miniwdl zip generates a ZIP file including a given WDL source code file and any other WDL files it imports. 
+miniwdl zip <file.wdl>
 ```
 
 ---
