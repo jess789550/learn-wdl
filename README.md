@@ -47,6 +47,7 @@ Most of these environments request one or more language runtimes (such as Java, 
 ---
 
 ### To run WDL you need to install Cromwell/MiniWDL/womtool
+#### Cromwell
 git clone the latest release from https://github.com/broadinstitute/cromwell
 
 ```
@@ -69,7 +70,11 @@ java -jar <womtool.jar> outputs <file.wdl>
 # Generate and output a graph visualization of the workflow in .dot format
 java -jar <womtool.jar> graph <file.wdl>
 
-################################################
+```
+
+#### MiniWDL
+
+```
 
 # MiniWDL: https://miniwdl.readthedocs.io/en/latest/runner_cli.html
 miniwdl run -i <input.json>
