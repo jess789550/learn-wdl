@@ -76,3 +76,19 @@ java -jar <womtool.jar> graph <file.wdl>
 - Terra Bio
 - Cromwell
 - MiniWDL
+
+---
+
+### Variable types
+
+https://docs.openwdl.org/language-guide/variables.html#variables
+
+---
+
+### Quickstart guide
+
+https://docs.openwdl.org/getting-started/quickstart.html
+
+- Tasks are comprise of inputs, outputs, and a command. Support requirements.
+- Workflows string together tasks via inputs/outputs into larger computation graph that can be executed. Can use if statements, scatter keyword, and messages output.
+- JSON is used for specifying both inputs to and outputs from a workflow. 
