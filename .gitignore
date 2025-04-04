@@ -4,3 +4,5 @@
 *stdout
 *.background
 *.submit
+*.log
+*.txt
