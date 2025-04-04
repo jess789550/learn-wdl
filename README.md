@@ -92,3 +92,11 @@ https://docs.openwdl.org/getting-started/quickstart.html
 - Tasks are comprise of inputs, outputs, and a command. Support requirements.
 - Workflows string together tasks via inputs/outputs into larger computation graph that can be executed. Can use if statements, scatter keyword, and messages output.
 - JSON is used for specifying both inputs to and outputs from a workflow. 
+
+
+---
+
+### Multi-input/Multi-output
+
+- Linear chaining relies on hierarchial naming https://support.terra.bio/hc/en-us/articles/360037128532-Multi-input-Multi-output
+- You can connect multiple outputs to  multiple inputs https://support.terra.bio/hc/en-us/articles/360037128532-Multi-input-Multi-output
