@@ -148,3 +148,37 @@ https://docs.openwdl.org/getting-started/quickstart.html
 
 - e.g. Docker, cpu, memory
 - https://cromwell.readthedocs.io/en/stable/RuntimeAttributes/
+
+---
+
+### Configuration
+
+#### Cromwell
+You can configure Cromwell settings either through configuration files or the Java command line. 
+
+To run using your configuration file, you should copy relevant stanzas from cromwell.examples.conf into a new file, modify it as appropriate, then pass it to Cromwell via:
+
+```
+$ java -Dconfig.file=/path/to/yourOverrides.conf cromwell.jar ...
+```
+
+To create your own configuration file, start by creating a new text file, for example my.conf.
+
+At the start of your file, include the file application.conf at the top before your custom configurations.
+
+```
+# include the application.conf at the top
+include required(classpath("application"))
+```
+
+https://cromwell.readthedocs.io/en/stable/Configuring/
+
+#### MiniWDL
+Upon starting, miniwdl looks for a custom configuration file in the following locations:
+
+- File named by --cfg command-line argument
+- File named by MINIWDL_CFG environment variable
+- XDG_CONFIG_HOME/miniwdl.cfg (usually ~/.config/miniwdl.cfg)
+- miniwdl.cfg in XDG_CONFIG_DIRS (usually /etc/xdg/.config/miniwdl.cfg)
+
+https://miniwdl.readthedocs.io/en/latest/runner_reference.html#configuration
