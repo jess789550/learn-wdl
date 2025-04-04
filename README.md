@@ -100,3 +100,24 @@ https://docs.openwdl.org/getting-started/quickstart.html
 
 - Linear chaining relies on hierarchial naming https://support.terra.bio/hc/en-us/articles/360037128532-Multi-input-Multi-output
 - You can connect multiple outputs to  multiple inputs https://support.terra.bio/hc/en-us/articles/360037128532-Multi-input-Multi-output
+
+---
+
+### Structs
+
+- Custom types that you can define
+- Member fields with name and associated type
+- Like a Class in Python
+- Group items together in category
+- https://docs.openwdl.org/language-guide/structs.html
+
+---
+
+### Scatter-gather
+
+- Parallel computing
+- Computation split into smaller, independent pieces
+- Multiple, parallel executions
+- Gather into single results
+- Optimise speed
+- https://docs.openwdl.org/design-patterns/scatter-gather/index.html
