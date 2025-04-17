@@ -77,7 +77,7 @@ java -jar <womtool.jar> graph <file.wdl>
 ```
 
 # MiniWDL: https://miniwdl.readthedocs.io/en/latest/runner_cli.html
-miniwdl run -i <input.json>
+miniwdl run -i <input.json> <file.wdl>
 
 # To aid the workflow development cycle, miniwdl includes a code quality checker which statically analyzes WDL source code to generate warnings and suggestions.
 miniwdl check <file.wdl>
